@@ -10,6 +10,7 @@ class Child < ActiveRecord::Base
 
 		def leave_class_room
 			self.class_room_id = nil
+      self.save
 		end
 
 end
