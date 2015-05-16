@@ -1,0 +1,17 @@
+<h3>Classroom Index</h3>
+<table>
+	<tr>
+		<th>Room Name</th>
+		<th>Teacher</th>
+		<th>Max Size</th>
+		<th>Current Size</th>
+	</tr>
+<% @class_rooms.each do |room| %>
+	<tr>				
+		<td><%= link_to room.name, class_room_path(room) %></td>
+		<td><%= room.teacher_first_name %> <%= room.teacher_last_name %></td>
+		<td><%= room.max_size %></td>
+		<td><%= room.children.count %></td>
+	</tr>
+<% end %>
+</table>
