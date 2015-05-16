@@ -8,7 +8,4 @@ class WaitingListEntry < ActiveRecord::Base
     def remove_child(child, class_room)
     end
 
-    def pop_child(class_room)
-    end
-
 end

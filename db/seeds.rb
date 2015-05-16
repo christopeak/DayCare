@@ -26,15 +26,17 @@ children = Child.create([
    {first_name: 'Bernice', last_name: 'Jones', class_room_id: 3},
    {first_name: 'Mary', last_name: 'Posthuma', class_room_id: 3},
    {first_name: 'Scarlet', last_name: 'Snackerdoodle', class_room_id: nil},
-   {first_name: 'Jimmy', last_name: 'Snipper', class_room_id: nil}
+   {first_name: 'Jimmy', last_name: 'Snipper', class_room_id: nil},
+   {first_name: 'Halladay', last_name: 'Turtledoves', class_room_id: nil},
+   {first_name: 'Dorothy', last_name: 'Kleenex', class_room_id: nil}
    ])
    
 waiting_lists = WaitingListEntry.create([
-  {class_room_id: 1, child_id: 1},
-  {class_room_id: 1, child_id: 2},
-  {class_room_id: 1, child_id: 1},
+  {class_room_id: 1, child_id: 11},
+  {class_room_id: 1, child_id: 12},
+  {class_room_id: 2, child_id: 1},
   {class_room_id: 2, child_id: 3},
-  {class_room_id: 2, child_id: 4},
   {class_room_id: 2, child_id: 2},
-  {class_room_id: 2, child_id: 5}
+  {class_room_id: 2, child_id: 13},
+  {class_room_id: 2, child_id: 14}
   ])
