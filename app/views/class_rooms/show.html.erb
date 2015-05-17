@@ -6,8 +6,12 @@
   </tr>
 <% @class_room.children.each do |c| %>
   <tr>
-    <td><%= c.first_name  %> <%= c.last_name %></td>
-    <td><%=  link_to 'remove', remove_from_class_path(c), method: :put  %></td>
+    <% if flash[:notice] == c.id %>
+    <td class="new"><%= c.first_name  %> <%= c.last_name %> </td>
+    <% else %>
+      <td><%= c.first_name  %> <%= c.last_name %></td>
+    <% end %>  
+    <td> <%= link_to "remove", remove_from_class_path(c), method: :put %> <td>
   </tr>
 <% end %>
 </table>
