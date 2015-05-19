@@ -20,7 +20,7 @@ children = Child.create([
    {first_name: 'Wanda', last_name: 'Smithers', class_room_id: 1},
    {first_name: 'Pat', last_name: 'Fonda', class_room_id: 2},
    {first_name: 'Max', last_name: 'Popper', class_room_id: 2},
-   {first_name: 'Sam', last_name: 'Knuckleberries', class_room_id: 2},
+   {first_name: 'Samuel', last_name: 'Twinkleberries', class_room_id: 2},
    {first_name: 'Grover', last_name: 'Cleveland', class_room_id: 2},
    {first_name: 'John', last_name: 'Lamoche', class_room_id: 3},
    {first_name: 'Bernice', last_name: 'Jones', class_room_id: 3},
@@ -28,7 +28,8 @@ children = Child.create([
    {first_name: 'Scarlet', last_name: 'Snackerdoodle', class_room_id: nil},
    {first_name: 'Jimmy', last_name: 'Snipper', class_room_id: nil},
    {first_name: 'Halladay', last_name: 'Turtledoves', class_room_id: nil},
-   {first_name: 'Dorothy', last_name: 'Kleenex', class_room_id: nil}
+   {first_name: 'Dorothy', last_name: 'Kleenex', class_room_id: nil},
+   {first_name: 'Jonathan', last_name: 'Puddles', class_room_id: nil}
    ])
    
 waiting_lists = WaitingListEntry.create([
@@ -38,5 +39,12 @@ waiting_lists = WaitingListEntry.create([
   {class_room_id: 2, child_id: 3},
   {class_room_id: 2, child_id: 2},
   {class_room_id: 2, child_id: 13},
-  {class_room_id: 2, child_id: 14}
+  {class_room_id: 2, child_id: 14},
+  {class_room_id: 2, child_id: 15}
   ])
+
+user = User.new
+user.email = 'cpeak@test.test'
+user.password='tester123'
+user.password_confirmation = 'tester'
+user.save!

@@ -14,5 +14,24 @@
  *= require_self
  */
 td.new { color: green; }
+th {text-align: left;}
+
+.main { 
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 35px;
+  padding: 5px 20px 15px;
+  background-color: #ffd6ad;
+  width: 45%;
+  margin-top: 2px;
+}
+
+.page_header { padding: 0px 30px;}
+
+html {
+  font-family: optima;
+}
+
+
 /*td {color: red;}
 */
