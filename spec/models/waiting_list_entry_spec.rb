@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe WaitingListEntry, type: :model do
     
   it "has class_id" do
-    expect(subject).to have_attribute(:class_id)
+    expect(subject).to have_attribute(:class_room_id)
   end
   
   it "has child_id" do

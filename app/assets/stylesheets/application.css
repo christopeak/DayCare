@@ -16,13 +16,22 @@
 td.new { color: green; }
 th {text-align: left;}
 
+.outer {
+  border-radius: 45px;
+  /*background-color: #E0F5FF;*/
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 20px;
+  width: 50%;
+}
 .main { 
   border-style: solid;
   border-width: 0px;
   border-radius: 35px;
   padding: 5px 20px 15px;
   background-color: #ffd6ad;
-  width: 45%;
   margin-top: 2px;
 }
 

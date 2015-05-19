@@ -11,7 +11,7 @@ RSpec.describe Child, type: :model do
   end
   
   it "has class_id" do
-    expect(subject).to have_attribute(:class_id)
+    expect(subject).to have_attribute(:class_room_id)
   end
   
   it "has parent_first_name" do

@@ -46,5 +46,5 @@ waiting_lists = WaitingListEntry.create([
 user = User.new
 user.email = 'cpeak@test.test'
 user.password='tester123'
-user.password_confirmation = 'tester'
+user.password_confirmation = 'tester123'
 user.save!

@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class='outer'>
 <p class="navbar-text pull-right">
 
 <% if user_signed_in? %>
@@ -29,6 +29,7 @@
 <% end %>
 <div class="main">
 <%= yield %>
+</div>
 </div>
 </body>
 </html>
