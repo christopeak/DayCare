@@ -40,3 +40,5 @@ gem 'spring', '= 1.3.5',        group: :development
 
 gem 'rspec-rails'
 gem 'devise'
+
+gem 'factory_girl_rails'

@@ -43,8 +43,4 @@ waiting_lists = WaitingListEntry.create([
   {class_room_id: 2, child_id: 15}
   ])
 
-user = User.new
-user.email = 'cpeak@test.test'
-user.password='tester123'
-user.password_confirmation = 'tester123'
-user.save!
+user = User.create(email: 'cpeak@test.test', password: 'tester123', password_confirmation: 'tester123')

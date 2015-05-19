@@ -2,6 +2,13 @@ require 'rails_helper'
 
 RSpec.describe Child, type: :model do
   
+  it "can leave a class_room" do
+    c = Child.new(class_room_id: 1)
+    c.leave_class_room
+    expect(subject.class_room_id).to eq(nil)
+  end
+
+
   it "has first_name" do
     expect(subject).to have_attribute(:first_name)
   end
