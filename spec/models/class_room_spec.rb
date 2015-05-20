@@ -2,8 +2,12 @@ require 'rails_helper'
 
 RSpec.describe ClassRoom, type: :model do
 
+  before :each do
+    @cr = FactoryGirl.create(:class_room)
+  end
+
   it "has a valid factory" do
-    expect(FactoryGirl.create(:class_room)).to be_valid
+    expect(@cr).to be_valid
   end
 
   it "has name" do
@@ -19,10 +23,17 @@ RSpec.describe ClassRoom, type: :model do
   end      
 
   it "#next_child" do
-    cr = FactoryGirl.create(:class_room)
+#    cr = FactoryGirl.create(:class_room)
     FactoryGirl.create(:child)
     FactoryGirl.create(:waiting_list_entry)
-    expect(cr.next_child.first_name).to eq('Jake')
+    expect(@cr.next_child.first_name).to eq('Jake')
+  end
+
+  it "#remove_child" do
+    #cr = FactoryGirl.create(:class_room)
+    c = FactoryGirl.create(:child)
+    @cr.remove_child(c)
+    expect(c.class_room_id).to eq(nil)
   end
 
 end
