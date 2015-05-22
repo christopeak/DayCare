@@ -4,7 +4,7 @@
     <th width="350px">Student Name</th>
     <th></th>
   </tr>
-<% @class_room.children.each do |c| %>
+<% @class_room.children.order(:last_name).each do |c| %>
   <tr>
     <% if flash[:child_id] == c.id %>
     <td class="new"><%= c.first_name  %> <%= c.last_name %> </td>

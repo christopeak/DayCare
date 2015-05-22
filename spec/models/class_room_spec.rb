@@ -23,7 +23,6 @@ RSpec.describe ClassRoom, type: :model do
   end      
 
   it "#next_child" do
-#    cr = FactoryGirl.create(:class_room)
     FactoryGirl.create(:child)
     FactoryGirl.create(:waiting_list_entry)
     expect(@cr.next_child.first_name).to eq('Jake')
