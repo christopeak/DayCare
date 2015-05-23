@@ -1,5 +1,6 @@
 class ChildrenController < ApplicationController
 
+
   def remove_from_class_room
     @child = Child.find (params[:id])
     class_room = @child.class_room
@@ -9,4 +10,10 @@ class ChildrenController < ApplicationController
     redirect_to(action: 'show', controller: 'class_rooms', id: class_room.id)
   end
 
+  def add
+  end
+
+  def index
+    @children = Child.all
+  end
 end

@@ -1,0 +1,17 @@
+<h3>Children in System</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Classrooom</th>
+  </tr>
+  <% @children.each do |child| %>
+  <tr>
+    <td><%= child.full_name %></td>
+    <% if child.class_room_id %>
+      <td><%= link_to child.room_name, class_room_path(child.class_room) %></td>
+    <% else %>
+      <td><%= child.room_name %></td>
+    <% end %>
+  </tr>
+  <% end %>
+</table>

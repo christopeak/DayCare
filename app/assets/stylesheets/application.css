@@ -41,6 +41,14 @@ html {
   font-family: optima;
 }
 
+#banner {
+  background-color:  #9c9;
+  font-size: 40px;
+ /* padding: 10px;*/
+}
+
 div.field {margin-bottom: .6em;}
 /*td {color: red;}
 */
+
+
