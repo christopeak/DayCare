@@ -15,7 +15,9 @@ Rails.application.routes.draw do
 
   get 'children' => 'children#index', as: 'children'
   get 'child/:id/edit' => 'children#edit', as: 'edit_child'
-  patch 'child/:id/edit' => 'children#update', as: 'patch_child'
+  get 'child/new' => 'children#new', as: 'child'
+  patch 'child/:id/edit_child' => 'children#update', as: 'patch_child'
+  patch 'child/new' => 'children#create'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

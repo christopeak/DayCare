@@ -1,13 +1,15 @@
-<%= form_for(@child, url: edit_child_path) do |f| %>
-  <div class='field'>
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
-  </div>
-  <div class='field'>
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
-  </div>
-  <div>
-    <%= f.submit %>
-  </div>
-<% end %>
+<div class='field'>
+  <%= f.label :first_name %>
+  <%= f.text_field :first_name %>
+</div>
+<div class='field'>
+  <%= f.label :last_name %>
+  <%= f.text_field :last_name %>
+</div>
+<div>
+  <%= f.label :class_room_id %>
+  <%= f.text_field :class_room_id %>
+</div>
+<div>
+  <%= f.submit %>
+</div>
