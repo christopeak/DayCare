@@ -16,4 +16,16 @@ class ChildrenController < ApplicationController
   def index
     @children = Child.all
   end
+
+  def edit
+    @child = Child.find (params[:id])
+  end
+
+  def update
+    @child = Child.find (params[:id])
+    @child.last_name = params[:child][:last_name]
+    @child.first_name = params[:child][:first_name]
+    @child.save
+    redirect_to(action: 'index', controller: 'children')
+  end
 end

@@ -6,7 +6,7 @@
   </tr>
   <% @children.each do |child| %>
   <tr>
-    <td><%= child.full_name %></td>
+    <td><%= link_to child.full_name, edit_child_path(child) %></td>
     <% if child.class_room_id %>
       <td><%= link_to child.room_name, class_room_path(child.class_room) %></td>
     <% else %>
