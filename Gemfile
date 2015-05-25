@@ -39,6 +39,6 @@ gem 'spring', '= 1.3.5',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'rspec-rails'
-gem 'devise', path: "../devise"
+gem 'devise'
 
 gem 'factory_girl_rails'
