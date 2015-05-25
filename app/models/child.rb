@@ -7,4 +7,11 @@ class Child < ActiveRecord::Base
       self.save
     end
 
+    def full_name
+      self.first_name + ' ' + self.last_name
+    end
+
+    def room_name
+      self.class_room_id != nil ? self.class_room.name : 'no classroom'
+    end
 end

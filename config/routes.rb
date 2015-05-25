@@ -12,6 +12,12 @@ Rails.application.routes.draw do
   get 'class_rooms' => 'class_rooms#index'
 
   put 'child/:id' => 'children#remove_from_class_room', as: 'remove_from_class'
+
+  get 'children' => 'children#index', as: 'children'
+  get 'child/:id/edit' => 'children#edit', as: 'edit_child'
+  get 'child/new' => 'children#new', as: 'child'
+  patch 'child/:id/edit_child' => 'children#update', as: 'patch_child'
+  patch 'child/new' => 'children#create'
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
